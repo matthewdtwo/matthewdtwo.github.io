@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>My Little Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="navbar.js"></script>
+    </head>
+
+    <body onload="document.getElementById('defaultOpen').click();">
+        <div class='container'>
+            <div class="header">
+                <div class="text"><a href="/">Welcome to my blog.</a></div>
+            </div>
+            <div class="tab">
+                <button class="tablinks" id="defaultOpen" onclick="openPage(event, 'Main')">Main</button>
+                <button class="tablinks" onclick="openPage(event, 'Projects')">Projects</button>
+                <button class="tablinks" onclick="openPage(event, 'About')">About</button>
+                <button class="tablinks" onclick="openPage(event, 'Links')">Links</button>
+            </div>
+            <div class="main">
+                <div id="Main" class="tabcontent">
+                    <p>This site is a playground for ideas and a showcase of projects to remind me of all the cool things I've made.</p>
+                </div>
+                <div id="Projects" class="tabcontent">
+                    <p>Projects will be displayed here</p>
+                </div>
+                <div id="About" class="tabcontent">
+                    <p>Stuff about me here.</p>
+                </div>
+                <div id="Links" class="tabcontent">
+                    <p>Links to my stuff here.</p>
+                    <ul>
+                        <li>GitHub</li>
+                        <li>Instagram</li>
+                        <li>Hackaday</li>
+                        <li>Resumé</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
