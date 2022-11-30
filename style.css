@@ -95,5 +95,22 @@ body {
         background-color: #ddd;
         color: #222;
       }
+}
 
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        left: 0;
+    }
+
+    .header a {
+      font-size: .8em;
+    }
+
+    .container .tab button {
+        font-size: 1.5em;
+    }
+    .container p {
+        font-size: 2em;
+    }
 }
